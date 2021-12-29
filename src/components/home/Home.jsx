@@ -31,7 +31,7 @@ export default function Home() {
           I am a graduate from SAIT as a junior Web Developer.
           I am motivated in designing and developing websites,
           and currently learning how to apply my technical skills in a business-oriented environment.
-          I look forward to start my career as a Web Developer.
+          I look forward to starting my career as a Web Developer.
         </p>
         <h3>I'm <span ref={textRef}></span></h3>
         <a href="#about"><GrDown className='arrow' /></a>
