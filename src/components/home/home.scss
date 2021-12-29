@@ -12,9 +12,9 @@
     flex: 0.5;
 
     svg {
-      width: 60%;
+      width: clamp(6rem, 18vw, 30rem);
       padding-top: 10rem;
-      padding-left: auto;
+      padding-right: 2rem;
       transform: rotate(-10deg);
 
       @include mobile {
