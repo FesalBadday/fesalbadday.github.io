@@ -24,18 +24,15 @@ export default function Projects() {
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
-                  <div className="arrowContainer">
-                    <GrPrevious className='arrow' />
-                  </div>
                   <h2>{d.title}</h2>
                   <p>
                     {d.desc}
                   </p>
-                  <span>Projects</span>
+                  <a href={d.link} target="_blank" rel="noopener noreferrer">Link</a>
                 </div>
               </div>
               <div className="right">
-                <img src={d.img} alt="" />
+                <img src={d.img} alt={d.title} />
               </div>
             </div>
           </div>
