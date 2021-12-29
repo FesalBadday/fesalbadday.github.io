@@ -12,7 +12,7 @@ export default function Home() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Junior Web Developer.', 'Front End Developer.', 'Back End Developer.', 'Designer.', 'Adventurer.', 'Gamer.',]
+      strings: ['A Junior Web Developer.', 'A Front End Developer.', 'A Back End Developer.', 'A Designer.', 'An Adventurer.', 'A Gamer.',]
     })
   }, [])
 
