@@ -5,10 +5,10 @@ import { useState } from 'react';
 export default function Contact() {
   const [message, setMessage] = useState(false)
 
-  const handleSubmit = (e) => {
+  /* const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true)
-  }
+  } */
 
   return (
     <div className='contact' id='contact'>
@@ -21,10 +21,11 @@ export default function Contact() {
       </div>
 
       <div className="right">
-        <form onSubmit={handleSubmit}>
-          <input type="text" name="" placeholder="Name *" required />
-          <input type="email" name="" placeholder="Email *" required />
-          <textarea name="" placeholder="Subject *" required></textarea>
+        {/* <form onSubmit={handleSubmit}> */}
+        <form action="https://formspree.io/f/mjvlkwbp" method="POST">
+          <input type="text" name="Name" placeholder="Name *" required />
+          <input type="email" name="Email" placeholder="Email *" required />
+          <textarea name="Subject" placeholder="Subject *" required></textarea>
           <button type="submit">Send</button>
           {message && <span>Thanks, I'll reply ASAP.</span>}
         </form>
