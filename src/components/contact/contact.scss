@@ -1,3 +1,103 @@
 .contact {
-  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  h2 {
+    font-size: 4rem;
+    color: #00ffff;
+    order: -1;
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: 2px solid #9500ff;
+    box-shadow: 0px 0px 20px #00ffff;
+    height: clamp(12rem, 20vw, 18rem);
+    width: clamp(18rem, 30vw, 35rem);
+
+    a {
+      font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+      color: #00ffff;
+
+      &:hover {
+        svg {
+          color: #9500ff;
+        }
+      }
+    }
+  }
+
+  .right {
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        align-self: start;
+        width: 350px;
+        height: 60px;
+        font-size: 1.5rem;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 3px solid #9500ff;
+        transition: 0.5s;
+        outline: none;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 3px solid #00ffff;
+      }
+
+      textarea {
+        width: clamp(22rem, 50vw, 60rem);
+        height: 400px;
+        font-size: 1.5rem;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 3px solid #9500ff;
+        transition: 0.5s;
+        outline: none;
+        resize: vertical;
+      }
+
+      button {
+        background-color: #9500ff;
+        border: none;
+        border-radius: 1rem;
+        color: #00ffff;
+        font-weight: 700;
+        padding: 15px 65px;
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+        cursor: pointer;
+
+        &:hover {
+          transition: 0.8s;
+          background-color: #00ffff;
+          color: #9500ff;
+        }
+      }
+
+      span {
+        color: #00ffff;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+      }
+    }
+  }
 }
