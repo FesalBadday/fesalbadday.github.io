@@ -1,5 +1,5 @@
 import './home.scss'
-import { KeyboardArrowDownTwoTone } from '@material-ui/icons'
+import { GrDown } from 'react-icons/gr'
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
 
@@ -12,7 +12,7 @@ export default function Home() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Junior Web Developer', 'Front End Developer', 'Back End Developer', 'Designer', 'Adventurer', 'Gamer',]
+      strings: ['Junior Web Developer.', 'Front End Developer.', 'Back End Developer.', 'Designer.', 'Adventurer.', 'Gamer.',]
     })
   }, [])
 
@@ -27,8 +27,13 @@ export default function Home() {
       <div className='info'>
         <h2>Hi There <span className="wave">👋🏻</span></h2>
         <h1>I'm Fesal Badday</h1>
-        <h3><span ref={textRef}></span></h3>
-        <a href="#about"><KeyboardArrowDownTwoTone className='arrow' /></a>
+        <p>
+          I have graduated from SAIT as a Junior Web Developer,
+          I am motivated in designing and developing websites and then learn how to apply them in a business-oriented environment.
+          I am excited to start my career as a Web Developer
+        </p>
+        <h3>I'm <span ref={textRef}></span></h3>
+        <a href="#about"><GrDown className='arrow' /></a>
       </div>
     </div>
   )
