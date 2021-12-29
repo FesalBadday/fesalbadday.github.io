@@ -1,11 +1,11 @@
 import './contact.scss'
 import { SiCodepen, SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si";
-import { useState } from 'react';
+/* import { useState } from 'react'; */
 
 export default function Contact() {
-  const [message, setMessage] = useState(false)
+  /* const [message, setMessage] = useState(false)
 
-  /* const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true)
   } */
@@ -27,7 +27,7 @@ export default function Contact() {
           <input type="email" name="Email" placeholder="Email *" required />
           <textarea name="Subject" placeholder="Subject *" required></textarea>
           <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply ASAP.</span>}
+          {/* {message && <span>Thanks, I'll reply ASAP.</span>} */}
         </form>
       </div>
     </div>
