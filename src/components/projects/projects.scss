@@ -126,7 +126,7 @@
 
   .slideNum {
     font-size: clamp(3rem, 3.5vw, 5rem);
-    padding-top: clamp(35rem, 10vw, 45rem);
+    padding-top: clamp(35rem, 35vw, 45rem);
     color: #00ffff;
 
     @include mobile {

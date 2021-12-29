@@ -28,9 +28,10 @@ export default function Home() {
         <h2>Hi There <span className="wave">👋🏻</span></h2>
         <h1>I'm Fesal Badday</h1>
         <p>
-          I have graduated from SAIT as a Junior Web Developer,
-          I am motivated in designing and developing websites and then learn how to apply them in a business-oriented environment.
-          I am excited to start my career as a Web Developer
+          I am a graduate from SAIT as a junior Web Developer.
+          I am motivated in designing and developing websites,
+          and currently learning how to apply my technical skills in a business-oriented environment.
+          I look forward to start my career as a Web Developer.
         </p>
         <h3>I'm <span ref={textRef}></span></h3>
         <a href="#about"><GrDown className='arrow' /></a>
