@@ -12,6 +12,8 @@ export default function Contact() {
 
   return (
     <div className='contact' id='contact'>
+      <div class="stars"></div>
+      <div class="twinkling"></div>
       <h2>Contact Me</h2>
       <div className="left">
         <a href="https://github.com/FesalBadday" target="_blank" rel="noopener noreferrer"><SiGithub /> GitHub</a>
