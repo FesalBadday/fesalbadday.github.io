@@ -30,7 +30,7 @@ export default function Projects() {
                   <p>
                     {d.desc}
                   </p>
-                  <a href={d.link} target="_blank" rel="noopener noreferrer">Link</a>
+                  <a href={d.link} target="_blank" rel="noopener noreferrer">Take Me There</a>
                 </div>
               </div>
               <div className="right">
