@@ -1,5 +1,5 @@
 import './contact.scss'
-import { SiCodepen, SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si";
+import { SiCodepen, SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si"
 /* import { useState } from 'react'; */
 
 export default function Contact() {

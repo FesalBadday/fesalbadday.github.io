@@ -14,8 +14,8 @@ import {
   SiNetlify,
   SiNodedotjs,
   SiSass,
-  SiTailwindcss,
-} from "react-icons/si";
+  SiTailwindcss
+} from "react-icons/si"
 
 export default function Tools() {
   return (

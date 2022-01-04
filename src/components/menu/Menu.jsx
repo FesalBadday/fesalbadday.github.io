@@ -1,7 +1,7 @@
 import './menu.scss'
 
 export default function Menu({ menuOpen, setMenuOpen }) {
-  const links = ['home', 'about', 'projects', 'contact'];
+  const links = ['home', 'about', 'projects', 'contact']
 
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
