@@ -6,13 +6,11 @@ import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import './app.scss'
 import { useState } from 'react'
-import ReactGa from 'react-ga'
+
+fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1')
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
-
-  ReactGa.initialize('UA-216173782-1')
-  ReactGa.pageview(window.location.hash)
 
   return (
     <div className="app">
