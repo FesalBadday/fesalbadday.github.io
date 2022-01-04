@@ -1,13 +1,16 @@
 import './menu.scss'
 
 export default function Menu({ menuOpen, setMenuOpen }) {
+  const links = ['home', 'about', 'projects', 'contact'];
+
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
       <ul>
-        <li onClick={() => setMenuOpen(!menuOpen)}><a href="#home">Home</a></li>
-        <li onClick={() => setMenuOpen(!menuOpen)}><a href="#about">About</a></li>
-        <li onClick={() => setMenuOpen(!menuOpen)}><a href="#projects">My Work</a></li>
-        <li onClick={() => setMenuOpen(!menuOpen)}><a href="#contact">Contact</a></li>
+        {
+          links.map((link) => {
+            return <li onClick={() => setMenuOpen(!menuOpen)}><a href={'#' + link}>{link.charAt(0).toUpperCase() + link.slice(1)}</a></li>
+          })
+        }
       </ul>
     </div>
   )
