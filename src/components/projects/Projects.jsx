@@ -8,7 +8,7 @@ export default function Projects() {
 
   const handleClick = (direction) => {
     direction === 'previous'
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 5)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 6)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0)
   }
 

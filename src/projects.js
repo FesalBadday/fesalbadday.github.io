@@ -22,20 +22,27 @@ export const data = [
   },
   {
     id: "4",
+    title: "Movie App",
+    desc: "Movie App built with Vue.js",
+    img: "./assets/projects/movie.webp",
+    link: "https://fe-movie.netlify.app"
+  },
+  {
+    id: "5",
     title: "Fetching API data",
     desc: "Fetching data asynchronously from a public API.",
     img: "./assets/projects/fetch.webp",
     link: "https://fesal.me/cpnt262-a3"
   },
   {
-    id: "5",
+    id: "6",
     title: "Cars Gallery API",
     desc: "Made my own API for photos of cars.",
     img: "./assets/projects/api.webp",
     link: "https://cpnt262-a5-fesal.herokuapp.com"
   },
   {
-    id: "6",
+    id: "7",
     title: "Hero Section",
     desc: "Landing page with a hero section.",
     img: "./assets/projects/hero.webp",
