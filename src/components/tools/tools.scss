@@ -25,12 +25,26 @@
   svg {
     font-size: clamp(3.7rem, 4vw, 6rem);
     margin: 0.5rem;
-    border: 2px solid #9500ff;
+    /* border: 2px solid #9500ff; */
     padding: 2rem 2rem;
   }
 
   svg:hover {
-    border: 2px solid #00ffff;
-    filter: drop-shadow(0px 0px 30px #00ffff);
+    /* border: 2px solid #00ffff; */
+    filter: drop-shadow(0px 0px 10px #00ffff);
+    color: #00ffff;
+    animation: rotate-center 2s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+
+    @keyframes rotate-center {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
