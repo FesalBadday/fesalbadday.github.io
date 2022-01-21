@@ -32,7 +32,7 @@ export const data = [
     title: "Fetching API data",
     desc: "Fetching data asynchronously from a public API.",
     img: "./assets/projects/fetch.webp",
-    link: "https://fesal.me/cpnt262-a3"
+    link: "https://fesal.me/fetching-deck-of-cards-api"
   },
   {
     id: "6",
@@ -43,9 +43,9 @@ export const data = [
   },
   {
     id: "7",
-    title: "Hero Section",
+    title: "Cars Website",
     desc: "Landing page with a hero section.",
     img: "./assets/projects/hero.webp",
-    link: "https://fesal.me/cpnt260-a4"
+    link: "https://fesal.me/carizzle-cars-website"
   }
 ]
