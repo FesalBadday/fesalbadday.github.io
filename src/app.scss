@@ -38,16 +38,12 @@
 
     .stars,
     .twinkling {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+      position: fixed;
       z-index: -1;
     }
 
     .stars {
-      background: transparent url("../public/assets/stars1.webp") repeat;
-      width: 100%;
-      height: 100%;
+      background: transparent url("../public/assets/stars1.webp");
       animation: move 230s linear infinite;
     }
 
@@ -58,7 +54,7 @@
 
     @keyframes move {
       to {
-        background-position: 400% 400%;
+        background-position: 150% 300%;
       }
     }
   }

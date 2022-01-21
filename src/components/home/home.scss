@@ -9,7 +9,7 @@
   }
 
   .logo {
-    flex: 0.5;
+    flex: .5;
 
     svg {
       width: clamp(6rem, 25vw, 30rem);
@@ -40,13 +40,13 @@
     }
   }
   .info {
-    flex: 0.5;
+    flex: .5;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #9500ff;
+    color: #00ffff;
 
     @include mobile {
       position: absolute;
@@ -75,7 +75,8 @@
     h3 {
       font-size: 2rem;
       margin: 10px 0;
-      color: #00ffff;
+      color: #9500ff;
+      text-shadow: 1px 1px 1px red, 0 0 1rem blue, 0 0 .5rem blue;
 
       @include mobile {
         font-size: 1.5rem;
