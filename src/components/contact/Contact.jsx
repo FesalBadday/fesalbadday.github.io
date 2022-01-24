@@ -1,5 +1,5 @@
 import './contact.scss'
-import { SiCodepen, SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si"
+import { SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si"
 /* import { useState } from 'react'; */
 
 export default function Contact() {
@@ -12,10 +12,12 @@ export default function Contact() {
 
   return (
     <div className='contact' id='contact'>
+      <div class="stars"></div>
+      <div class="twinkling"></div>
       <h2>Contact Me</h2>
       <div className="left">
         <a href="https://github.com/FesalBadday" target="_blank" rel="noopener noreferrer"><SiGithub /> GitHub</a>
-        <a href="https://codepen.io/Fesal" target="_blank" rel="noopener noreferrer"><SiCodepen /> CodePen</a>
+        {/* <a href="https://codepen.io/Fesal" target="_blank" rel="noopener noreferrer"><SiCodepen /> CodePen</a> */}
         <a href="https://www.linkedin.com/in/fesal-badday-701347172" target="_blank" rel="noopener noreferrer"><SiLinkedin /> LinkedIn</a>
         <a href="mailto:fesal.n04@hotmail.com"><SiMaildotru /> fesal.n04@hotmail.com</a>
       </div>

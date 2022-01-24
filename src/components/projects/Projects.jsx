@@ -14,6 +14,8 @@ export default function Projects() {
 
   return (
     <div className='projects' id='projects'>
+      <div class="stars"></div>
+      <div class="twinkling"></div>
       <div className="slideNum">
         {`${currentSlide + 1} / ${data.length}`}
       </div>

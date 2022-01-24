@@ -21,13 +21,52 @@
       }
     }
 
+    .nav ul {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1.5rem;
+
+      a {
+        position: relative;
+        color: #00ffff;
+        letter-spacing: .10em;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 8px;
+      }
+
+      a:after {    
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: linear-gradient(to right, #00ffff3f, #00ffff);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        border-radius: 50%;
+        width: 0;
+      }
+      a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
     .hamburger {
       width: 32px;
       height: 25px;
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
+
+      @include mobile {
+        display: flex;
+      }
 
       span {
         width: 100%;
