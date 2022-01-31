@@ -31,13 +31,12 @@
     scrollbar-width: thin;
 
     &::-webkit-scrollbar {
-      width: 8px;
+      width: 6px;
       background: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
       background: #00ffff;
-      border-radius: 4px;
 
       &:hover {
         background: #00ffffcc;
@@ -46,6 +45,17 @@
 
     > * {
       height: 100%;
+
+      scrollbar-color: #00ffff transparent;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #00ffff;
+      }
     }
 
     .stars,
