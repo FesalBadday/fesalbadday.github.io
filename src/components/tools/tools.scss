@@ -18,7 +18,8 @@
     padding-bottom: 2rem;
 
     @include mobile {
-      width: 80%;
+      text-align: center;
+      width: 100%;
     }
   }
 

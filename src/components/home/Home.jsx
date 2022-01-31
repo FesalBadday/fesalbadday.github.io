@@ -1,5 +1,5 @@
 import './home.scss'
-import { GrDown } from 'react-icons/gr'
+//import { GrDown } from 'react-icons/gr'
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
 
@@ -36,7 +36,7 @@ export default function Home() {
           I look forward to starting my career as a Web Developer.
         </p>
         <h3>I'm <span ref={textRef}></span></h3>
-        <a href="#about"><GrDown className='arrow' /></a>
+        {/* <a href="#about"><GrDown className='arrow' /></a> */}
       </div>
     </div>
   )

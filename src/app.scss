@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Kufam:wght@400;500;600;700;800;900&family=Manuale:wght@300;400;500;600;700;800&display=swap");
+@import "./global.scss";
 
 * {
   font-family: "Bellota", cursive;
@@ -13,27 +14,56 @@
     color: #009999;
   }
 }
+
 .app {
   height: 100vh;
 
   .sections {
     z-index: 0;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100% - 70px);
     background-color: #1e0033;
     position: relative;
     top: 70px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none; //for firefox
+
+    // scrollbar firefox
+    scrollbar-color: #00ffff transparent;
+    scrollbar-width: thin;
+
     &::-webkit-scrollbar {
-      display: none;
+      width: 8px;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #00ffff;
+      border-radius: 4px;
+
+      &:hover {
+        background: #00ffffcc;
+      }
     }
 
     > * {
-      width: 100vw;
-      height: calc(100vh - 70px);
-      scroll-snap-align: start;
+      height: 100%;
+
+      // scrollbar firefox
+      scrollbar-color: #00ffff transparent;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #00ffff;
+        border-radius: 4px;
+
+        &:hover {
+          background: #00ffffcc;
+        }
+      }
     }
 
     .stars,
