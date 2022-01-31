@@ -6,7 +6,7 @@ import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import './app.scss'
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 /* fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1') */
 
@@ -14,7 +14,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <Router>
+    <BrowserRouter>
       <div className="app">
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -27,7 +27,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
