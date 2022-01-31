@@ -16,9 +16,9 @@
   .tools {
     width: 50%;
     padding-bottom: 2rem;
-
+    text-align: center;
+    
     @include mobile {
-      text-align: center;
       width: 100%;
     }
   }
