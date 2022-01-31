@@ -14,7 +14,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={'/'}>
       <div className="app">
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
