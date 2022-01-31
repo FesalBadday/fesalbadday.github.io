@@ -12,8 +12,7 @@ export default function About() {
         </p> */}
       </div>
       <div className="skills">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
+        
         <Tools />
       </div>
     </div>

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import { HashRouter } from 'react-router-dom'
 
-ReactDOM.hydrate(
+ReactDOM.render(
   <HashRouter>
     <App />
   </HashRouter>,
