@@ -2,7 +2,7 @@ import './menu.scss'
 import { Link } from 'react-router-dom'
 
 export default function Menu({ menuOpen, setMenuOpen }) {
-  const links = ['home', 'about', 'projects', 'contact']
+  const links = ['home', 'skills', 'work', 'contact']
 
   return (
     <div className={'menu ' + (menuOpen && 'active')}>

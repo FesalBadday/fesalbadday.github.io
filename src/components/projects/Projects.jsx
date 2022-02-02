@@ -1,48 +1,43 @@
 import './projects.scss'
-import { useState } from "react"
 import { data } from "../../projects"
-import { GrPrevious, GrNext } from 'react-icons/gr'
 
 export default function Projects() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  const handleClick = (direction) => {
-    direction === 'previous'
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 6)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0)
-  }
 
   return (
     <div className='projects' id='projects'>
       <div class="stars"></div>
       <div class="twinkling"></div>
       <h2>My Work</h2>
-      <div className="slideNum">
-        {`${currentSlide + 1} / ${data.length}`}
-      </div>
-
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
-        {data.map((d) => (
-          <div className="container">
-            <div className="item">
-              <div className="left">
-                <div className="leftContainer">
-                  <h2>{d.title}</h2>
-                  <p>
-                    {d.desc}
-                  </p>
-                  <a href={d.link} target="_blank" rel="noopener noreferrer">Take Me There</a>
-                </div>
-              </div>
-              <div className="right">
-                <img src={d.img} alt={d.title} />
-              </div>
-            </div>
+      {
+        data.map((d) => (
+          <div className="project">
+            {
+              d.id % 2 === 0 ?
+                <>
+                  <h3 className="phone">{d.title}</h3>
+                  <img src={d.img} alt={d.title} className="left" />
+                  <a href={d.link} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
+                  <span className="right">
+                    <h3>{d.title}</h3>
+                    {/* <p>{d.desc}</p> */}
+                    <a href={d.link} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
+                  </span>
+                </>
+                :
+                <>
+                  <span className="left">
+                    <h3>{d.title}</h3>
+                    {/* <p>{d.desc}</p> */}
+                    <a href={d.link} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
+                  </span>
+                  <h3 className="phone">{d.title}</h3>
+                  <img src={d.img} alt={d.title} className="right" />
+                  <a href={d.link} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
+                </>
+            }
           </div>
-        ))}
-      </div>
-      <GrPrevious className='arrow previous' onClick={() => handleClick("previous")} />
-      <GrNext className='arrow next' onClick={() => handleClick()} />
+        ))
+      }
     </div>
   )
 }

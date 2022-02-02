@@ -43,7 +43,7 @@
         position: absolute;
         background: linear-gradient(to right, #00ffff3f, #00ffff);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        border-radius: 50%;
+        border-radius: .5rem;
         width: 0;
       }
       a:hover:after { 
