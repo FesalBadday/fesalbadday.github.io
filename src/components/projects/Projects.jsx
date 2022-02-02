@@ -16,11 +16,11 @@ export default function Projects() {
                 <>
                   <h3 className="phone">{d.title}</h3>
                   <img src={d.img} alt={d.title} className="left" />
-                  <a href={d.link} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
+                  <a href={d.github} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
                   <span className="right">
                     <h3>{d.title}</h3>
                     {/* <p>{d.desc}</p> */}
-                    <a href={d.link} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
+                    <a href={d.github} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
                   </span>
                 </>
                 :
@@ -28,11 +28,11 @@ export default function Projects() {
                   <span className="left">
                     <h3>{d.title}</h3>
                     {/* <p>{d.desc}</p> */}
-                    <a href={d.link} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
+                    <a href={d.github} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
                   </span>
                   <h3 className="phone">{d.title}</h3>
                   <img src={d.img} alt={d.title} className="right" />
-                  <a href={d.link} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
+                  <a href={d.github} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
                 </>
             }
           </div>
