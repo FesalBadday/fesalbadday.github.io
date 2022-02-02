@@ -37,7 +37,7 @@ export const data = [
     desc: "Fetching data asynchronously from a public API.",
     img: "./assets/projects/fetch.webp",
     site: "https://fesal.me/fetching-deck-of-cards-api",
-    github: ""
+    github: "https://github.com/FesalBadday/fetching-deck-of-cards-api"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const data = [
     desc: "Made my own API for photos of cars.",
     img: "./assets/projects/api.webp",
     site: "https://cpnt262-a5-fesal.herokuapp.com",
-    github: "https://github.com/FesalBadday/fetching-deck-of-cards-api"
+    github: "https://github.com/FesalBadday/rest-api"
   },
   {
     id: 7,
