@@ -4,6 +4,7 @@ import Home from './components/home/Home'
 import About from './components/about/About'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
+import Error from './components/404/404'
 import './app.scss'
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
@@ -23,6 +24,7 @@ function App() {
           <Route path="/skills" element={<About />} />
           <Route path="/work" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error  />}  />
         </Routes>
       </div>
     </div>
