@@ -1,0 +1,73 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  * {
+    font-family: "Manuale", serif;
+  }
+
+  p {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 6vw, 6rem);
+    color: #8b0000;
+    font-weight: 700;
+  }
+
+  h1 {
+    color: #00ffff7e;
+    font-weight: 700;
+    position: relative;
+    font-size: clamp(10rem, 17vw, 20rem);
+    padding: 30px;
+  }
+
+  h1::before,
+  h1::after {
+    padding: 30px;
+    color: #00ffff;
+    content: "404";
+    position: absolute;
+    top: 0;
+  }
+
+  h1::before {
+    left: 2px;
+    text-shadow: 1px 1px 2px black, -10px 0 5px red;
+    animation: glitch-red 3s ease-in infinite;
+  }
+
+  h1::after {
+    right: 2px;
+    text-shadow: 1px 1px 2px black, 10px 0 5px blue;
+    animation: glitch-blue 3s ease-out infinite;
+  }
+
+  @keyframes glitch-red {
+    $steps: 100;
+    $top: 100;
+    $right: 200;
+    $bottom: 100;
+    $left: 2;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        clip: rect(random($top) + rem, random($right) + rem, random($bottom) + rem, random($left) + rem);
+      }
+    }
+  }
+
+  @keyframes glitch-blue {
+    $steps: 100;
+    $top: 100;
+    $right: 200;
+    $bottom: 100;
+    $left: 2;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        clip: rect(random($top) + rem, random($right) + rem, random($bottom) + rem, random($left) + rem);
+      }
+    }
+  }
+}
