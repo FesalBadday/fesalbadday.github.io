@@ -3,6 +3,8 @@
 .home {
   display: flex;
 
+  animation: fadeIn ease 1s;
+
   @include mobile {
     flex-direction: column;
     align-items: center;

@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   gap: 2rem;
 
+  animation: fadeIn ease 1s;
+
   h2 {
     font-size: 4rem;
     color: #00ffff;
@@ -84,7 +86,7 @@
         font-weight: 700;
         padding: 15px 65px;
         font-size: 1.8rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
         cursor: pointer;
 
         &:hover {
@@ -97,7 +99,7 @@
       span {
         color: #00ffff;
         font-size: 1.2rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
     }
   }

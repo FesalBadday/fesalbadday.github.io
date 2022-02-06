@@ -9,7 +9,7 @@ import './app.scss'
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1')
+/* fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1') */
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)

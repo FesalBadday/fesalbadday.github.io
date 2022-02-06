@@ -19,6 +19,8 @@
     padding: 4rem 0;
     grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(380px, 600px)) minmax(1rem, 1fr);
 
+    animation: fadeIn ease 1s;
+
     @include mobile {
       display: flex;
       flex-direction: column;
@@ -42,7 +44,7 @@
           margin-top: 1.5rem;
           margin-left: 10px;
           cursor: pointer;
-  
+
           &:hover {
             transition: 0.8s;
             background-color: #00ffff;
