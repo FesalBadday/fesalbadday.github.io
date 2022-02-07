@@ -89,6 +89,7 @@
         margin-top: 1.5rem;
         margin-left: 10px;
         cursor: pointer;
+        box-shadow: #000 0px 0px 25px 0px inset, #000 0px 0px 0px 1px inset;
 
         &:hover {
           transition: 0.8s;

@@ -59,6 +59,7 @@
         border: 3px solid #9500ff;
         transition: 0.5s;
         outline: none;
+        box-shadow: #000 0px 0px 30px 0px inset, #000 0px 0px 0px 1px inset;
       }
 
       input:focus,
@@ -76,6 +77,7 @@
         transition: 0.5s;
         outline: none;
         resize: vertical;
+        box-shadow: #000 0px 0px 40px 0px inset, #000 0px 0px 0px 1px inset;
       }
 
       button {
@@ -88,6 +90,7 @@
         font-size: 1.8rem;
         margin-bottom: 0.5rem;
         cursor: pointer;
+        box-shadow: #000 0px 0px 50px 0px inset, #000 0px 0px 0px 1px inset;
 
         &:hover {
           transition: 0.8s;

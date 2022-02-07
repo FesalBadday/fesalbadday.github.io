@@ -1,5 +1,7 @@
 $mainColor: #3b0066;
 
+$boxShadow: #000 0px 0px 40px 0px inset, #000 0px 0px 0px 1px inset;
+
 $width: 768px;
 
 @mixin mobile {

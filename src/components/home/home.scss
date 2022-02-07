@@ -51,7 +51,7 @@
     color: #00ffff;
 
     @include mobile {
-      position: absolute;
+      position: fixed;
       padding-top: 3.5rem;
       padding-left: 2.5rem;
     }
