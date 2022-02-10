@@ -9,8 +9,7 @@
   }
 }(window.location))
 
-
-const body = $('.space'), template = $('.stars'), starsAmount = 400, delayTime = 40;
+const body = $('.space'), template = $('.stars'), starsAmount = screen.width > 768 ? 400 : 40, delayTime = 20;
 
 let size = 'sm';
 
@@ -18,8 +17,8 @@ for (let i = 0; i < starsAmount; i++) {
   i % 2 === 0 ? size = 'sm' : i % 3 === 0 ? size = 'md' : size = 'lg';
 
   template.clone().removeAttr('id').css({
-    top: (Math.random() * 100) + '%',
-    left: (Math.random() * 100) + '%',
+    top: (Math.round(Math.random() * 100)) + '%',
+    left: (Math.round(Math.random() * 100)) + '%',
     animationDelay: (Math.random() * delayTime) + 's'
   }).addClass(size).appendTo(body);
 }
