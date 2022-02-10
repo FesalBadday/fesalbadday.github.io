@@ -9,7 +9,7 @@ import './app.scss'
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-/* fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1') */
+fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1')
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -24,7 +24,7 @@ function App() {
           <Route path="/skills" element={<About />} />
           <Route path="/work" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Error  />}  />
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </div>
