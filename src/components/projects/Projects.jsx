@@ -5,8 +5,6 @@ export default function Projects() {
 
   return (
     <div className='projects' id='projects'>
-      <div class="stars"></div>
-      <div class="twinkling"></div>
       <h2>My Work</h2>
       {
         data.map((d) => (
@@ -15,7 +13,7 @@ export default function Projects() {
               d.id % 2 === 0 ?
                 <>
                   <h3 className="phone">{d.title}</h3>
-                  <img src={d.img} alt={d.title} className="left" loading="lazy" />
+                  <img src={d.img} alt={d.title} className="left" />
                   <a href={d.github} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
                   <span className="right">
                     <h3>{d.title}</h3>
@@ -31,7 +29,7 @@ export default function Projects() {
                     <a href={d.github} target="_blank" rel="noopener noreferrer" className="button">Take Me There</a>
                   </span>
                   <h3 className="phone">{d.title}</h3>
-                  <img src={d.img} alt={d.title} className="right" loading="lazy" />
+                  <img src={d.img} alt={d.title} className="right" />
                   <a href={d.github} target="_blank" rel="noopener noreferrer" className="button phone">Take Me There</a>
                 </>
             }
