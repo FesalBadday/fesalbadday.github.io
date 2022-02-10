@@ -10,7 +10,7 @@
 }(window.location))
 
 
-const body = $('.space'), template = $('.stars'), starsAmount = 500, delayTime = 20;
+const body = $('.space'), template = $('.stars'), starsAmount = 400, delayTime = 40;
 
 let size = 'sm';
 
