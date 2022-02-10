@@ -17,7 +17,7 @@ body {
   background-image: url("../star.webp");
   background-size: 100% 100%;
   opacity: 0;
-  animation: twinkling 6s ease-in-out 0s infinite;
+  animation: twinkling 10s ease-in-out infinite;
 }
 
 .stars.sm {
@@ -37,22 +37,20 @@ body {
 
 @keyframes twinkling {
   0% {
-    transform: scale(1);
     opacity: .5;
   }
 
   25% {
-    transform: scale(.5);
     opacity: 1;
+    transform: translate(-20%, -60%);
   }
 
   50% {
-    transform: scale(1);
     opacity: .5;
   }
 
   100% {
-    transform: scale(.5);
-    opacity: 1;
+    opacity: .2;
+    transform: translate(20%, 50%);
   }
 }
