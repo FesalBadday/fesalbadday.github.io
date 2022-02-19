@@ -9,7 +9,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
       <ul>
         {
           links.map((link) => {
-            return <li onClick={() => setMenuOpen(!menuOpen)}><Link to={'/' + (link === 'home' ? '' : link)}>{link.charAt(0).toUpperCase() + link.slice(1)}</Link></li>
+            return <li onClick={() => setMenuOpen(!menuOpen)}><Link to={'/' + (link === 'home' ? '' : link)} data-text={'\u00A0' + link}>{'\u00A0' + link}</Link></li>
           })
         }
       </ul>

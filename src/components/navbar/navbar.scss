@@ -24,32 +24,29 @@
 
     .nav ul {
       display: flex;
-      gap: 1.5rem;
-      font-size: 1.5rem;
+      gap: 2rem;
+      font-size: 2rem;
 
       a {
         position: relative;
-        color: #00ffff;
-        letter-spacing: .10em;
+        color: #ffffff80;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        display: inline-block;
-        padding: 8px;
       }
 
-      a:after {    
-        bottom: 0;
-        content: "";
-        height: 4px;
-        left: 50%;
+      a::before {
+        content: attr(data-text);
         position: absolute;
-        background: linear-gradient(to right, #00ffff3f, #00ffff);
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        border-radius: .5rem;
+        color: #00ffff;
         width: 0;
+        overflow: hidden;
+        transition: 1s;
+        //border-right: 4px solid #00ffff;
+        -webkit-text-stroke: 1px #00ffff;
       }
-      a:hover:after { 
-        width: 100%; 
-        left: 0; 
+      a:hover::before {
+        width: 100%;
+        filter: drop-shadow(0 0 2px #00ffff);
       }
 
       @include mobile {
