@@ -11,10 +11,18 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
         </div>
         <div className='nav'>
           <ul>
-            <li><Link to="/" data-text="&nbsp;Home">&nbsp;Home</Link></li>
-            <li><Link to="/skills" data-text="&nbsp;Skills">&nbsp;Skills</Link></li>
-            <li><Link to="/work" data-text="&nbsp;Work">&nbsp;Work</Link></li>
-            <li><Link to="/contact" data-text="&nbsp;Contact">&nbsp;Contact</Link></li>
+            <li>
+              <Link to="/" class="text" data-text="Home">Home</Link>
+            </li>
+            <li>
+              <Link to="/skills" class="text" data-text="Skills">Skills</Link>
+            </li>
+            <li>
+              <Link to="/work" class="text" data-text="Work">Work</Link>
+            </li>
+            <li>
+              <Link to="/contact" class="text" data-text="Contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
