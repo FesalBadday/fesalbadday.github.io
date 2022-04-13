@@ -14,6 +14,10 @@ fetch('https://api.countapi.xyz/update/fesal.me/portfolio?amount=1')
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const wts = document.createElement('script'); wts.async = true;
+  wts.src = 'https://app.ardalio.com/log7.js'; document.head.appendChild(wts);
+  wts.onload = function () { wtslog7(2097325, 3); };
+
   return (
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -27,6 +31,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
+      <span id="wts2097325"></span>
     </div>
   );
 }
