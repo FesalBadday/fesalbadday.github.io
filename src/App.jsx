@@ -5,6 +5,7 @@ import About from './components/about/About'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import Error from './components/404/404'
+import wtslog7 from 'react'
 import './app.scss'
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
@@ -32,6 +33,9 @@ function App() {
         </Routes>
       </div>
       <span id="wts2097325"></span>
+      <a href="https://www.web-stat.com">
+        <img src="https://app.ardalio.com/7/3/2097325.png"
+          alt="Web-Stat traffic analysis" /></a>
     </div>
   );
 }
