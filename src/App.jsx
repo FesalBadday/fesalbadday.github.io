@@ -27,6 +27,9 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
+      <a href="https://www.web-stat.com">
+<img alt="Web-Stat web statistics" src="https://app.ardalio.com/7/3/2097325.png" />
+</a>
     </div>
   );
 }
