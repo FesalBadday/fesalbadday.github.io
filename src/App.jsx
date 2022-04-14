@@ -19,9 +19,6 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-      <a href="https://www.web-stat.com">
-<img alt="Web-Stat web statistics" src="https://app.ardalio.com/7/3/2097325.png" />
-</a>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<About />} />
