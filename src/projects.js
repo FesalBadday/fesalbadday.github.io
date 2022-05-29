@@ -33,6 +33,14 @@ export const data = [
   },
   {
     id: 5,
+    title: "Sam Movers",
+    desc: "Moving company website.",
+    img: "./assets/projects/sam-movers.webp",
+    site: "https://sammovers.ca/",
+    github: "#"
+  },
+  {
+    id: 6,
     title: "Fetching API data",
     desc: "Fetching data asynchronously from a public API.",
     img: "./assets/projects/fetch.webp",
@@ -40,7 +48,7 @@ export const data = [
     github: "https://github.com/FesalBadday/fetching-deck-of-cards-api"
   },
   {
-    id: 6,
+    id: 7,
     title: "Cars Gallery API",
     desc: "Made my own API for photos of cars.",
     img: "./assets/projects/api.webp",
@@ -48,7 +56,7 @@ export const data = [
     github: "https://github.com/FesalBadday/rest-api"
   },
   {
-    id: 7,
+    id: 8,
     title: "Cars Website",
     desc: "Landing page with a hero section.",
     img: "./assets/projects/hero.webp",
