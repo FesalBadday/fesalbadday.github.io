@@ -36,8 +36,8 @@ export const data = [
     title: "Sam Movers",
     desc: "Moving company website.",
     img: "./assets/projects/sam-movers.webp",
-    site: "https://sammovers.ca/",
-    github: "#"
+    site: "https://sammovers.ca",
+    github: "https://sammovers.ca"
   },
   {
     id: 6,
