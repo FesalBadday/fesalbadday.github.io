@@ -4,8 +4,8 @@ export const data = [
     title: "Blackjack Game",
     desc: "Blackjack game with leaderboard.",
     img: "./assets/projects/blackjack.webp",
-    site: "https://blackjack265.herokuapp.com",
-    github: "https://github.com/FesalBadday/blackjack"
+    site: "https://fesal.me/blackjack_v1",
+    github: "https://github.com/FesalBadday/blackjack_v1"
   },
   {
     id: 2,
