@@ -244,19 +244,18 @@
             <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
 
             <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">All Projects</span>
-                <span class="work__item" data-filter=".personal">Personal Projects</span>
-                <span class="work__item" data-filter=".client">Client Projects</span>
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".app">App</span>
             </div>
 
             <div class="work__container container grid">
-                <div class="work__card mix personal">
+                <div class="work__card mix web">
                     <div class="overlay">
-                        <img src="assets/img/work/personal/blackjack.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/web/blackjack.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
                         <h3 class="work__title">Blackjack Game</h3>
-
                         <div class="portfolio__item-details">
                             <h3 class="details__title">A Browser Blackjack Game</h3>
                             <p class="details__description">Simple Blackjack game made using JavaScript, HTML, and CSS
@@ -264,9 +263,8 @@
                                     target="_blank" rel="noopener noreferrer">Deck of Cards API <i
                                         class="bx bx-right-arrow-alt contact__button-icon"></i></a></p>
                             <ul class="details__info">
-                                <li><span>JavaScript, HTML, CSS</span></li>
-                                <li><span><a href="/blackjack_v1" class="contact__button"
-                                            target="_blank" rel="noopener noreferrer">Live
+                                <li><span><a href="/blackjack_v1" class="contact__button" target="_blank"
+                                            rel="noopener noreferrer">Live
                                             Preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
                                 <li><span><a href="https://github.com/FesalBadday/blackjack_v1" class="contact__button"
@@ -278,9 +276,27 @@
                     </div>
                 </div>
 
-                <div class="work__card mix client">
+                <div class="work__card mix app">
                     <div class="overlay">
-                        <img src="assets/img/work/client/qs-movers.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/app/mafia_classic.webp" alt="" class="work__img work__button">
+                        <i class="bx bx-link-external work__link work__button"></i>
+
+                        <h3 class="work__title">Mafia Classic</h3>
+                        <div class="portfolio__item-details">
+                            <h3 class="details__title">Mafia Classic Game</h3>
+                            <p class="details__description">Mafia Classic Game</p>
+                            <ul class="details__info">
+                                <li><span><a href="https://play.google.com/store/apps/details?id=com.fikralabsgames.mafiaclassic" class="contact__button" target="_blank"
+                                            rel="noopener noreferrer">Live preview <i
+                                                class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <div class="overlay">
+                        <img src="assets/img/work/web/qs-movers.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
                         <h3 class="work__title">QS Movers</h3>
@@ -293,43 +309,16 @@
                                 moves with confidence.</p>
                             <ul class="details__info">
                                 <li><span><a href="https://qs-movers.com" class="contact__button" target="_blank"
-                                            rel="noopener noreferrer">Live preview <i
+                                            rel="noopener noreferrer">Live Preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="work__card mix personal">
+                <div class="work__card mix web">
                     <div class="overlay">
-                        <img src="assets/img/work/personal/instagram.webp" alt="" class="work__img work__button">
-                        <i class="bx bx-link-external work__link work__button"></i>
-
-                        <h3 class="work__title">Instagram Integration</h3>
-                        <div class="portfolio__item-details">
-                            <h3 class="details__title">Social Integration</h3>
-                            <p class="details__description">Social Integration using <a
-                                    href="https://developers.facebook.com/docs/instagram-basic-display-api"
-                                    class="contact__button" target="_blank" rel="noopener noreferrer">Instagram Basic
-                                    Display API <i class="bx bx-right-arrow-alt contact__button-icon"></i></a> to pull
-                                posts of cars that has the hashtag (#showroom) only and deployed on Netlify.</p>
-                            <ul class="details__info">
-                                <li><span>JavaScript, HTML, CSS</span></li>
-                                <li><span><a href="https://cpnt270-a3.netlify.app" class="contact__button"
-                                            target="_blank" rel="noopener noreferrer">Live Preview <i
-                                                class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
-                                <li><span><a href="https://github.com/FesalBadday/Instagram-Integration"
-                                            class="contact__button" target="_blank" rel="noopener noreferrer">Code
-                                            Preview <i
-                                                class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work__card mix personal">
-                    <div class="overlay">
-                        <img src="assets/img/work/personal/movie.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/web/movie.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
                         <h3 class="work__title">Movie App</h3>
@@ -342,7 +331,6 @@
                                 contains all info about movies and tv shows, you can browse all genres, video trailers,
                                 posters, etc. App deployed on Netlify.</p>
                             <ul class="details__info">
-                                <li><span>Vue, JavaScript, SCSS</span></li>
                                 <li><span><a href="https://fe-movie.netlify.app" class="contact__button" target="_blank"
                                             rel="noopener noreferrer">Live preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
@@ -354,20 +342,17 @@
                     </div>
                 </div>
 
-                <div class="work__card mix client">
+                <div class="work__card mix app">
                     <div class="overlay">
-                        <img src="assets/img/work/client/mp3tilawa.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/app/who_is_out.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
-                        <h3 class="work__title">MP3 Tilawa</h3>
+                        <h3 class="work__title">Who is Out</h3>
                         <div class="portfolio__item-details">
-                            <h3 class="details__title">Qur’an Recitation Platform</h3>
-                            <p class="details__description">A comprehensive online hub for listening to the Holy Qur’an,
-                                offering over 220 renowned reciters across multiple narration styles. Users can easily
-                                browse, choose their preferred reciter and riwayah, and listen to high-quality,
-                                immersive audio streaming for a truly reflective experience.</p>
+                            <h3 class="details__title">Who is Out Game</h3>
+                            <p class="details__description">Who is Out Game</p>
                             <ul class="details__info">
-                                <li><span><a href="https://mp3tilawa.com" class="contact__button" target="_blank"
+                                <li><span><a href="https://play.google.com/store/apps/details?id=com.fikralabsgames.outoftheloop" class="contact__button" target="_blank"
                                             rel="noopener noreferrer">Live preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
                             </ul>
@@ -375,9 +360,9 @@
                     </div>
                 </div>
 
-                <div class="work__card mix personal">
+                <div class="work__card mix web">
                     <div class="overlay">
-                        <img src="assets/img/work/personal/carizzle.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/web/carizzle.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
                         <h3 class="work__title">Carizzle</h3>
@@ -386,8 +371,7 @@
                             <p class="details__description">A simple car website for small businesses that shows
                                 provided services, recent work, gallery, team, and about info. (Not Fully Done Yet)</p>
                             <ul class="details__info">
-                                <li><span>JavaScript, HTML, CSS</span></li>
-                                <li><span><a href="https://fesal.me/carizzle" class="contact__button" target="_blank"
+                                <li><span><a href="/carizzle" class="contact__button" target="_blank"
                                             rel="noopener noreferrer">Live preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
                                 <li><span><a href="https://github.com/FesalBadday/carizzle" class="contact__button"
@@ -399,9 +383,9 @@
                     </div>
                 </div>
 
-                <div class="work__card mix personal">
+                <div class="work__card mix web">
                     <div class="overlay">
-                        <img src="assets/img/work/personal/fetch.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/web/fetch.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
                         <h3 class="work__title">Fetching API data</h3>
@@ -413,9 +397,8 @@
                                     rel="noopener noreferrer">Deck of Cards API <i
                                         class="bx bx-right-arrow-alt contact__button-icon"></i></a></p>
                             <ul class="details__info">
-                                <li><span>JavaScript, HTML, CSS</span></li>
-                                <li><span><a href="https://fesal.me/fetching-deck-of-cards-api" class="contact__button"
-                                            target="_blank" rel="noopener noreferrer">Live preview <i
+                                <li><span><a href="/fetching-deck-of-cards-api" class="contact__button" target="_blank"
+                                            rel="noopener noreferrer">Live preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
                                 <li><span><a href="https://github.com/FesalBadday/fetching-deck-of-cards-api"
                                             class="contact__button" target="_blank" rel="noopener noreferrer">Code
@@ -426,24 +409,21 @@
                     </div>
                 </div>
 
-                <div class="work__card mix personal">
+                <div class="work__card mix web">
                     <div class="overlay">
-                        <img src="assets/img/work/personal/api.webp" alt="" class="work__img work__button">
+                        <img src="assets/img/work/web/kinetic.webp" alt="" class="work__img work__button">
                         <i class="bx bx-link-external work__link work__button"></i>
 
-                        <h3 class="work__title">Cars Gallery API</h3>
+                        <h3 class="work__title"></h3>
                         <div class="portfolio__item-details">
-                            <h3 class="details__title">REST API Deployed On Heroku</h3>
-                            <p class="details__description">Cars REST API is made with Express.js and Node.js which you
-                                can use to get everything in the array or a specific car in the array based on the id or
-                                a random car from the array. Website is deployed on Heroku and I am using MongoDB to
-                                store everything.</p>
+                            <h3 class="details__title">Aura Kinetic</h3>
+                            <p class="details__description">Aura Kinetic is an interactive web experience built with
+                                modern web technologies, featuring 3D rendering and smooth animations.</p>
                             <ul class="details__info">
-                                <li><span>JavaScript, HTML, CSS, Express.js, Node.js, MongoDB</span></li>
-                                <li><span><a href="https://cpnt262-a5-fesal.herokuapp.com" class="contact__button"
+                                <li><span><a href="/kinetic" class="contact__button"
                                             target="_blank" rel="noopener noreferrer">Live preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
-                                <li><span><a href="https://github.com/FesalBadday/rest-api" class="contact__button"
+                                <li><span><a href="https://github.com/FesalBadday/kinetic" class="contact__button"
                                             target="_blank" rel="noopener noreferrer">Code preview <i
                                                 class="bx bx-right-arrow-alt contact__button-icon"></i></a></span></li>
                             </ul>
